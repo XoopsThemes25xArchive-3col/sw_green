@@ -1,0 +1,695 @@
+/* CSS by ffxk */
+/* ————————————————————————正义开始———————————————————————— */
+body {
+	font: 62.5% 'Lucida Grande', Verdana, Arial, Sans-Serif; /* Resets 1em to 10px */
+	color: #efefef;
+
+
+background: #3f4b59 url('../images/back.jpg') top left no-repeat;
+	text-align: center;
+	margin: 0 0 0px;
+}
+
+form {
+	margin: 0px;
+	padding: 0px;
+}
+/* 全局文字和连接定义 */
+a {
+      color: #AAAAAA; /* 主体文字色*/
+　　　text-decoration: none;
+　　　padding-bottom: 5px;
+　　　white-space: normal;
+　　}
+
+a:link { text-decoration: none}
+a:visited { text-decoration: none; color: #AAAAAA}
+a:hover { text-decoration: none; color: #de184a}
+
+#obCenter {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+table {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+#obLayout {
+	width: 700px;
+	margin: 0px auto;
+	padding: 0px;
+	text-align: left;
+	color: #AAAAAA;
+	background-image: url(../images/bg.gif); /* 中央主体背景色*/
+}
+
+#wp_obLayout {
+	font: 62.5% 'Lucida Grande', Verdana, Arial, Sans-Serif; /* Resets 1em to 10px */
+	color: #999999;
+
+background: transparent url('/images/rolling.gif') top right no-repeat;
+	text-align: left;
+	margin: 0 0 0px;
+}
+
+#fiAdd {
+	vertical-align: middle;
+	padding-right: 5px;
+	padding-left: 12px;
+}
+
+#fiRow3 {
+	background-image: url(../images/banner.jpg); /* 顶部主体背景图*/
+	height: 100px;
+}
+
+#fiRow2Left {
+	vertical-align: middle;
+	padding-left: 20px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	background-color: #000000; /* 顶部主体背景色*/
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #FFFFFF; /* 顶部主体分割线色上*/
+	border-bottom-color: #FFFFFF; /* 顶部主体分割线色下*/
+}
+
+#fiRow2Left input {
+}
+
+#fiBanner {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#obNav {
+	background-image: url(../images/bg_daohang.gif); /* 顶部导航菜单背景色*/
+}
+
+#obNav a {
+	color: #FFFFFF; /* 顶部导航菜单分割线色上*/
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 2px; /* 顶部导航菜单文字间距离*/
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	height: 14px;
+	line-height: 12px;
+}
+
+#obNav a:hover {
+	background-color: #aaaa55; /* 顶部导航菜单文字背景色*/
+	color: #eeeeee; /* 顶部导航菜单文字色*/
+}
+
+#obHead {
+	height: 58px;
+	background-color: #000000; /* 顶部广告区背景色*/
+}
+
+td {
+	margin: 0px;
+	padding: 0px;
+	vertical-align: top;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+#obR1 {
+	color: #D7D7D7;
+	text-align: left;
+	background-color: #000000; /* 顶部登陆状态区背景色*/
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000; /* 顶部登陆状态区分割线色下*/
+	vertical-align: middle;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000000; /* 顶部登陆状态区分割线色上*/
+	padding-right: 26px;
+	padding-left: 8px;
+	background-image: url(images/logmen.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#obR1 a {
+	color: #ffffff; /* 顶部登陆状态区文字色*/
+	font-size: 10px;
+	letter-spacing: 2px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	line-height: 17px;
+	height: 18px;
+}
+
+#obR1 a:hover {
+	text-decoration: none;
+	background-color: #229adf;
+}
+
+.obBlock {
+}
+
+.obBlockC {
+	padding: 2px;
+}
+
+ul { margin: 2px; padding: 2px; list-style: none; text-align: left;}
+li { margin-left: 2px; list-style: none; color: #aaaaaa}
+
+input.formButton {}
+
+.item {
+}
+
+/*- Main Menu in Header */
+ul.menu {
+    font-size: 12px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 0;
+	left: 21%;
+	width: 77%;
+	}
+
+ul.menu li {
+	display: inline;
+	margin: 0;
+	}
+
+	ul.menu,
+	ul.menu li a {
+		padding: 100px 15px 6px;
+		}
+
+ul.menu li a {
+	font: 1em Verdana, Helvetica, Arial, Sans-Serif;
+	color: white;
+	margin: 0;
+	}
+		
+		.menu a:visited {
+	
+			color: #fff !important; /* text color when hovered */
+	
+			}
+		
+ul.menu li a:hover{
+	background: #111 !important; /* hover background menu item color */
+	color: #ccc !important; /* text color when hovered */
+	border-bottom: 5px solid #DF1B4C; /* just a hover style, not necessary */
+	}
+	
+ul.menu li.current_page_item a,
+ul.menu li.current_page_item a:hover {
+	color: #000 !important; /* active tab hover text color */
+	background: #000 !important; /* active tab background color */
+	border-bottom: 5px solid #3388cc;
+	}
+
+	ul.menu li.current_page_item a,
+	ul.menu li.current_page_item a:hover {
+		color: white !important;
+		background: white;
+		text-decoration: none;
+		}
+
+.itemHead {
+	color: #229adf;
+	font-weight: bold;
+	text-transform: capitalize;
+	background-color: #222222; /* 中央区块标题背景色*/
+	padding-left: 5px;
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	background-color: #222222; /* 聚合文章标题背景色*/
+	background-repeat: no-repeat;
+	background-position: right center;
+	line-height: 19px;
+}
+
+.itemInfo {
+	text-align: right;
+	padding: 3px;
+	background-color: transparent;
+}
+
+.itemTitle a {
+	font-weight: bold;
+	color: #227db5; /* 中央区块标题文字色*/
+}
+
+.itemPoster {font-size: 90%; font-style:italic;}
+.itemPostDate {font-size: 90%; font-style:italic;}
+.itemStats {font-size: 90%; font-style:italic;}
+.itemBody {
+	background-color: transparent; /* news文章内容背景色*/
+	border: 0px dotted #808080;
+	padding: 1px;	
+	margin: 0 0 0px 0;
+}
+
+.itemText {
+	line-height: 1.2em;
+	text-align: justify;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background: #000000;
+}
+
+/* news文章内容色*/
+.newsitemText {
+	line-height: 1.2em;
+	text-align: justify;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: #000000 url('../images/newsback.gif') top right no-repeat;
+}
+
+.itemText:first-letter {font-size: 95%;}
+.itemFoot {
+	text-align: right;
+	padding: 1px;
+	background-color: transparent; /* news文章内容底部色*/
+}
+
+.itemAdminLink {font-size: 90%;}
+.itemPermaLink {font-size: 90%;}
+
+
+th {
+	background-color: #81bb4b; /* [通知]选项区背景色*/
+	color: #ffffff;
+	vertical-align : middle;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+#header {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	height: 90px;
+	
+	border-bottom: 5px solid #111;
+
+	background: #81BB4B url('../images/backright.jpg') top right no-repeat ;	
+	 }
+
+#top_header {width: 100%; vertical-align: middle; text-align:left; color: #ffffff;}
+#top_block {
+    width: 13%;
+    border: 1px solid #eee8aa;
+	padding: 2px;	
+	margin: 0 0 2px 0;
+}
+
+input, .button {
+	border: 1px solid #00956d;
+   background: #f5fcf4; 
+	padding: 2px 0px 0px 0px;
+}
+
+#leftcolumn {
+	padding: 0px;
+	background-color: #081421; /* 左区块背景色*/
+	color: #AAAAAA;
+	font-size: 12px;
+	width: 200px;
+}
+
+#leftcolumn th {vertical-align: middle;}
+#leftcolumn div.blockTitle {
+	padding: 0px;
+	font-weight: bold;
+	background-color: #229adf; /* 左区块标题背景色*/
+	background-repeat: no-repeat;
+	background-position: right center;
+	text-transform: uppercase;
+	color: #81bb4b;
+	font-size: 14px;
+}
+
+#leftcolumn div.blockContent {
+	line-height: 120%;
+	line-height: 120%;
+	padding-top: 2px;
+	padding-bottom: 5px;
+}
+
+#centercolumn {
+	padding: 5px;
+	border-left-width: 0px;
+	border-left-style: solid;
+	border-left-color: #222222; /* 左和中左区块分割线色上*/
+}
+
+#centercolumn th {vertical-align: middle;}
+#centerCcolumn {padding: 0px;}
+#centerCcolumn .blockTitle {
+	color: #AAAAAA;
+	font-weight: bold;
+	text-transform: capitalize;
+	background-color: #222222; /* 中央区块标题背景色*/
+	padding-left: 5px;
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	background-image: url(images/mma.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	line-height: 19px;
+}
+
+#centerCcolumn .blockContent {
+	padding: 3px;
+	line-height: 120%;
+	background-color: transparent; /* 中央区块背景色*/
+	font-size: 12px;
+	color: #AAAAAA;
+	margin: 0px;
+	border-bottom-width: 0px;
+	border-bottom-style: solid;
+	border-bottom-color: #a0a0a0; /* 中央区块下分割线色*/
+}
+
+#centerCcolumn, #bottomCcolumn {padding: 0px 3px 1px 3px;}
+/* 中央下区块标题背景色*/
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {background-color: #000000; padding: 3px; color: #639ACE; font-weight: bold; margin-top: 0px; margin-right: 0px;  margin-left: 0px;}
+/* 中央下区块内容背景色*/
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent {border-left: 0px solid #cccccc; border-right: 0px solid #cccccc; border-bottom: 0px solid #dddddd; padding: 3px; margin-right: 0px;  margin-left: 0px; margin-bottom: 2px; line-height: 120%;}
+
+#centerLcolumn, #bottomLcolumn, #centerRcolumn, #bottomRcolumn {
+	width: 50%; padding: 0px 3px 0px 0px;
+}
+/* 中左下区块标题背景色*/
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle {
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: capitalize;
+	background-color: #81bb4b;
+	padding-left: 5px;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	background-image: url(images/mma.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+/* 中左下区块内容背景色*/
+#centerLcolumn .blockContent, #centerRcolumn .blockContent {
+	border-left: 0px solid #cccccc; border-right: 0px solid #cccccc; border-bottom: 0px solid #dddddd; padding: 3px; margin-left: 2px; margin-right: 3px; margin-bottom: 2px; line-height: 120%;
+}
+/* 中右下区块标题背景色*/
+#centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {
+}
+/* 中右下区块内容背景色*/
+#bottomLcolumn .blockContent, #bottomRcolumn .blockContent {
+	padding-left: 5px;
+	line-height: 120%;
+	background-color: transparent;
+	color: #AAAAAA;
+	font-size: 12px;
+	margin: 0px;
+	border-bottom-width: 0px;
+	border-bottom-style: solid;
+}
+
+#centerLcolumn {width: 50%; padding: 0px 2px 0px 0px;}
+#centerLcolumn .blockTitle {
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: capitalize;
+	background-color: #81bb4b; /* 中左区块标题背景色*/
+	padding-left: 5px;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	background-image: url(images/mma.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#centerLcolumn .blockContent {
+	padding-left: 5px;
+	line-height: 120%;
+	background-color: transparent; /* 中左区内容背景色*/
+	color: #AAAAAA;
+	font-size: 12px;
+	margin: 0px;
+	border-bottom-width: 0px;
+	border-bottom-style: solid;
+	border-bottom-color: #229adf; /* 中左区下分割线色*/
+}
+
+#centerRcolumn {width: 50%; padding: 0px 0px 0px 2px;}
+#centerRcolumn .blockTitle {
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: capitalize;
+	background-color: #81bb4b; /* 中右区块标题背景色*/
+	padding-left: 5px;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	background-image: url(images/mma.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#centerRcolumn .blockContent {
+	padding-left: 5px;
+	line-height: 120%;
+	background-color: transparent; /* 中右区内容背景色*/
+	color: #AAAAAA;
+	font-size: 12px;
+	margin: 0px;
+	border-bottom-width: 0px;
+	border-bottom-style: solid;
+	border-bottom-color: #229adf; /* 中右区下分割线色*/
+}
+
+#content {text-align: left; padding: 0px;}
+
+#rightcolumn {
+	padding: 0px;
+	background-color: transparent; /* 右区块背景色*/
+	color: #AAAAAA;
+	font-size: 12px;
+	border-left-width: 1px; 
+	border-left-style: solid;
+	border-left-color: #3f4b59; /* 右和中右区块分割线色下*/
+	width: 200px;
+}
+
+#rightcolumn th {vertical-align: middle;}
+#rightcolumn div.blockTitle {
+	padding-left: 5px;
+	font-weight: bold;
+	background-color: #3f4b59; /* 右区块标题背景色*/
+	background-repeat: no-repeat;
+	background-position: right center;
+	color: #81bb4b;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+#rightcolumn div.blockContent {
+	line-height: 120%;
+	line-height: 120%;
+	padding-top: 2px;
+	padding-bottom: 5px;
+}
+
+#cmsFooter {
+	text-align:center;
+	padding: 5px;
+	font-size: 10px;
+	color: #AAAAAA;
+	border-left-width: 0px;
+	border-left-style: solid;
+	border-left-color: #cccccc; /* 左和中左区块分割线色下*/
+}
+
+#mainmenu a {
+	display: block;
+	padding: 1px;
+	color: #aaaaaa;
+	font-weight: normal;
+	text-transform: lowercase;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: transparent; /* 菜单直连友情连接区块背景色*/
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #81bb4b;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+#mainmenu a:hover {
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #229adf;
+}
+
+#mainmenu a.menuTop {
+	padding-left: 10px;
+}
+#mainmenu a.menuMain {
+	padding-left: 10px;
+	margin-top: 1px;
+}
+#mainmenu a.menuSub {
+	padding-left: 19px;
+	margin-top: 1px;
+}
+
+#usermenu a {display: block; margin: 0; padding: 4px;}
+#usermenu a:hover {}
+#usermenu a.menuTop {}
+#usermenu a.highlight {background-color: #fcc;}
+
+/* Comment Start */
+#commentform textarea {
+	width: 90%;
+	padding: 3px 4px;
+	margin: 3px 5px 1px 0;
+	background: transparent url('../images/commentform.gif') bottom right no-repeat;
+	border: 1px solid #F5FFE5;
+	color: #83AE3F;
+	}
+.commentsblock {
+	padding-left: 1px;
+	background: transparent url('../images/commentsblock.gif') bottom right no-repeat; /* 最新评论区块设置*/
+}
+/* Comment End */
+
+.outer {
+}
+.head {background-color: transparent; padding: 2px; font-weight: bold;} /* 通知分类区块背景色*/
+.even {
+	padding: 1px;
+	background-color: #000000; /* 通知_全局通知区块背景色*/
+}
+.odd {
+	padding: 1px;
+	background-color: #000000; /* 通知_全局通知区块背景色*/
+}
+.foot {background-color: #39414c; padding: 2px; font-weight: bold;} /* 通知_更新区块背景色*/
+/* 按月归档及其他新闻 */
+tr.even td {
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: transparent;
+}
+tr.odd td {
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: transparent;
+}
+
+div.errorMsg { background-color: transparent; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: transparent; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : transparent; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #111111; border-bottom: 1px solid #111111; padding: 10px;}
+
+div.xoopsCode { background: transparent; border: 0px inset #81bb4b; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+div.xoopsQuote { background: transparent; border: 0px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 11px; color: #39414a; font-weight:bold; border-top: 1px solid #39414a; border-right: 1px solid #39414a; border-bottom: 1px solid #39414a; background-color: transparent; margin: 2px; padding: 1px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #2F5376; font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+/* 播放器*/
+#phx{FILTER: Alpha(Opacity=30, FinishOpacity=20, Style=2, StartX=60, StartY=60, FinishX=40, FinishY=40)gray(); WIDTH: 480px; HEIGHT: 80px}
+
+#obFooter {
+	font-size: 10px;
+	line-height: 20px;
+	height: 25px;
+	text-align: center;
+	padding: 5px; /* 页面底宽度*/
+	background-color: #060b0f;
+	color: #AAAAAA;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #229adf; /* 页面底分割线上*/
+}
+#obSHL {
+	background-color: #229adf; /* 两边填充背景色*/
+	width: 0px;
+}
+#obSHR {
+	background-color: #229adf; /* 两边填充背景色*/
+	width: 0px;
+}
+#obSearch {
+    text-align: right;
+	border: 0px solid #FFFFFF;
+	padding: 0px;
+}
+#obSearch input {
+}
+select {
+	font-size: 12px;
+}
+input {
+	font-size: 12px;
+}
+button {
+	font-size: 12px;
+}
+#obSTextarea {
+	width: 100%;
+}
+#obform2 {
+	width: 98%;
+}
+.obNavMM {
+	vertical-align: middle;
+	width: 12px;
+}
+.obSpacer {
+	width: 150px;
+	height: 1px;
+}
+.greenLarge {
+	color: #228080;
+	font-weight: bold;
+}

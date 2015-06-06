@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_imageurl}>css/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_imageurl}>css/wordpress.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_imageurl}>css/daohang.css" />
+
+<!-- rss应用开 -->
+<script type="text/javascript" src="<{$xoops_imageurl}>js/block.js"></script>
+<!-- rss应用完 -->
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+	<div id="header">
+	
+      <form style="margin-top: 0px;" action="<{$xoops_url}>/user.php" method="post">
+<div id="top_header">
+  <table style="width:100%; " border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <{if !$xoops_isuser}>
+        <td>
+            <img src="<{$xoops_imageurl}>images/log_id.gif" alt="ID" align="middle" />
+            <input type="text" name="uname" size="6" value="<{$block.unamevalue}>" maxlength="25" style="font-size:11px; padding:0px;" />
+            <img src="<{$xoops_imageurl}>images/log_pass.gif" alt="Password" align="middle" />
+            <input type="password" name="pass" size="6" maxlength="25" style="font-size:11px; padding:0px;" />
+            <input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+            <input type="hidden" name="op" value="login" />
+            <input class="button" type="submit" value="登陆" style="font-size:11px; padding:0px;" /><br />
+            <div id="top_block"><a href="<{$xoops_url}>/user.php#lost"><font color="#ffffff">忘记密码</font></a> | <a href="<{$xoops_url}>/register.php"><font color="#ffffff">现在注册</font></a></div>
+        </td>
+    <{else}>
+        <td id="header_02"><a href="<{$xoops_url}>/edituser.php"> <img src="<{$xoops_imageurl}>images/u_menu_02.gif" alt="Edit account" border="0" align="middle" /> </a>  <a href="<{$xoops_url}>/user.php?op=logout"> <img src="<{$xoops_imageurl}>images/u_menu_04.gif" alt="Logout" border="0" align="middle" /> </a>  <{if $ex_new_messages > 0}> <a class="highlight" href="<{$xoops_url}>/viewpmsg.php"><img src="<{$xoops_imageurl}>images/u_menu_05.gif" alt="Logout" border="0" align="middle" />(<span style="color:#ff0000; font-weight: bold;"><{$ex_new_messages}></span>)</a> <{else}> <a href="<{$xoops_url}>/viewpmsg.php"><img src="<{$xoops_imageurl}>images/u_menu_05.gif" alt="Logout" border="0" align="middle" /></a> <{/if}>  <{if $xoops_isadmin}> <a href="<{$xoops_url}>/admin.php"><img src="<{$xoops_imageurl}>images/u_menu_06.gif" alt="admin" border="0" align="middle" /></a><{/if}> </td>
+    <{/if}> </tr>
+  </table>
+<!-- RSS订阅开 -->
+  <a href="#" onClick="return overlay(this, 'subcontent1')"><img src="<{$xoops_imageurl}>images/rss.gif" alt="rss" border="0"></a>
+<div id="subcontent1" style="position:absolute; display:none">
+<div class="popup1" style="background-color: #000; color: #000; border: #000 solid 1px; width:100px; padding: 10px; text-align:right;">
+<img src="<{$xoops_imageurl}>images/feed.gif" width="100" height="20" border="0" alt="Solo Windr" />
+	<ul>
+	    <li><a href="http://feed.ffxk.com/" target="_blank">日志订阅</a></li>
+	    <li><a href="http://feed.feedsky.com/ffxk_article" target="_blank">文章订阅</a></li>
+	    <li><a href="http://feed.feedsky.com/ffxk_photo" target="_blank">相册订阅</a></li>
+	    <li><a href="http://feed.feedsky.com/ffxk_planet" target="_blank">聚合订阅</a></li>
+	</ul>
+
+<div align="center" style="color:#ffffff;background:#f30;border:2px dotted #000;padding: 3px; text-align:center; width: 100%;"><a href="<{$xoops_url}>/register.php" style="color:yellow;">注册会员</a>&nbsp;&nbsp;<a href="<{$xoops_url}>/user.php#lost" style="color:yellow;">忘记密码</a></div>
+
+<div align="right"><input type="button" onClick="overlayclose('subcontent1'); return false" value="Close" style="color:#ffffff;background:#81bb4b;border:2px dotted #81bb4b;font-weight: bold;"></input></div>
+</div></div>
+<!-- RSS订阅末 --> 
+
+
+        &nbsp;&nbsp;    <a href="http://64.233.179.104/translate_c?hl=en&u=<{$xoops_url}>/index.php"><img src="<{$xoops_imageurl}>images/english.gif" border="0"></a>
+        &nbsp;&nbsp;    <a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>images/schinese.gif" border="0"></a>
+        &nbsp;&nbsp;    <a id="StranLink" class="menuTop" href="#">繁体</a><script language="javascript" src="<{$xoops_imageurl}>js/xlanguage.js"></script>
+</div>
+     </form>
+		
+		<ul class="menu">
+		
+			<li class="current_page_item"><a href="<{$xoops_url}>">Solo Windr</a></li>
+			
+            <li class="page_item"><a href="<{$xoops_url}>/modules/article/view.category.php/1" title="article">XOOPS技巧</a></li>
+			<li class="page_item"><a href="<{$xoops_url}>/modules/article/view.category.php/5" title="article">开源代码</a></li>
+			<li class="page_item"><a href="<{$xoops_url}>/modules/article/view.category.php/6" title="article">网页设计</a></li>
+            <li class="page_item"><a href="<{$xoops_url}>/modules/article/view.category.php/7" title="article">程序</a></li>
+			<li class="page_item"><a href="<{$xoops_url}>/modules/wordpress/202.htm" title="links">申请链接</a></li>
+			<li class="page_item"><a href="<{$xoops_url}>/modules/down/" title="down">文件仓库</a></li>
+			<li class="page_item"><a href="<{$xoops_url}>/modules/links/" title="links">收藏</a></li>
+			
+	  </ul>
+</div>
+      <br />
+
+<div align="center" id="obCenter"> 
+  <table align="center" cellspacing="0" id="obLayout"> 
+    <tr> 
+      <td id="obHead" ><table cellspacing="0">
+<!-- 删了<tr></tr>标签 -->
+  </table>
+   <table id="fiRow3" cellspacing="0">
+          <tr>
+            <td>
+              <a href="<{$xoops_url}>/"><img src="<{$xoops_url}>/images/banner_logo.gif" alt="Home" border="0"></a>
+              </td>
+            <td id="fiBanner" ><{$xoops_banner}></td> 
+          </tr>
+       </table></td>
+    </tr> 
+       <tr>
+        <td><table id="obNav" cellspacing="0"> 
+          <tr> 
+      <td height="16" align="center"><script language="JavaScript" src="<{$xoops_imageurl}>js/daohang.js"></script>
+    <ul id="nav">
+        <li><a class="menuTop" href="<{$xoops_url}>/modules/wordpress/">博客</a>
+	<ul><{if $xoops_isuser == 1}>
+	    <li><a href="<{$xoops_url}>/modules/wordpress/wp-admin/post.php">提交日志</a></li>
+	  <{/if}>
+	    <li><a href="<{$xoops_url}>/modules/wordpress/archives/">日志归档</a></li>
+	</ul>
+</li>
+        <li><a class="menuTop" href="<{$xoops_url}>/modules/article/">文章</a>
+	<ul><{if $xoops_isuser == 1}>
+	    <li><a href="<{$xoops_url}>/modules/article/edit.article.php">提交文章</a></li>
+	  <{/if}>
+	    <li><a href="<{$xoops_url}>/modules/article/view.archive.php">文章归档</a></li>
+	    <li><a href="<{$xoops_url}>/modules/article/view.list.php">文章列表</a></li>
+	    <li><a href="<{$xoops_url}>/modules/article/list.tag.php">Tag列表</a></li>
+	    <li><a href="<{$xoops_url}>/modules/article/view.blocks.php">文章区块</a></li>
+	    <li><a href="<{$xoops_url}>/modules/article/search.php">文章搜索</a></li>
+	    <li><a href="<{$xoops_url}>/modules/article/view.author.php">我的文章</a></li>
+	</ul>
+</li>
+        <li ><a class="menuTop" href="<{$xoops_url}>/modules/photo/">相册</a>
+	<ul><{if $xoops_isuser == 1}>
+	    <li><a href="<{$xoops_url}>/modules/photo/upload.php">上传相片</a></li>
+	  <{/if}>
+	    <li><a href="<{$xoops_url}>/modules/photo/thumbnails.php?album=topn">热门相片</a></li>
+	    <li><a href="<{$xoops_url}>/modules/photo/rss.php">RSS订阅</a></li>
+	</ul>
+</li>
+        <li ><a class="menuTop" href="<{$xoops_url}>/modules/planet/">聚合</a>
+	<ul><{if $xoops_isuser == 1}>
+	    <li><a href="<{$xoops_url}>/modules/planet/action.blog.php">提交</a></li>
+	  <{/if}>
+	    <li><a href="<{$xoops_url}>/modules/planet/index.php/l1">新闻列表</a></li>
+	    <li><a href="<{$xoops_url}>/modules/planet/view.blogs.php">新闻来源</a></li>
+	</ul>
+</li>
+
+        <li ><a class="menuTop" href="<{$xoops_url}>/modules/newbb/">论坛</a>
+	<ul>
+	    <li><a href="<{$xoops_url}>/modules/newbb/viewall.php?type=digest">精华</a></li>
+	</ul>
+</li>
+        
+        <li ><a class="menuTop" href="<{$xoops_url}>/modules/space/">空间</a>
+	<ul><{if $xoops_isuser == 1}>
+	    <li><a href="<{$xoops_url}>/modules/space/admin/index.php?op=submit">提交页面</a></li>
+	  <{/if}>
+	    <li><a href="<{$xoops_url}>/modules/space/rewrite/tc_3.html">关于我</a></li>
+	</ul>
+</li>
+        <li ><a class="menuTop" href="<{$xoops_url}>/modules/shop/">商店</a>
+	<ul><{if $xoops_isuser == 1}>
+	    <li><a href="<{$xoops_url}>/modules/shop/shopping_cart.php">购物车</a></li>
+	  <{/if}>
+	    <li><a href="<{$xoops_url}>/modules/shop/products_new.php">新进商品</a></li>
+	</ul>
+</li>
+  </ul>
+    </tr>
+
+		</td>
+  		    </table>
+
+  <table cellspacing="0">
+    <tr>
+    <{if $xoops_lblocks}>
+      <td id="leftcolumn">
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+          <{include file="$xoops_theme/blocks/theme_blockleft.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->
+      </td>
+       <{/if}>
+       
+      <td id="centercolumn">
+        <!-- Display center blocks if any -->
+        <{if $xoops_showcblock == 1}>
+        <table cellspacing="0">
+		<tr>
+			<td id="centerCcolumn" colspan="2">
+			<!-- Start center-center blocks loop -->
+			<{foreach item=block from=$xoops_ccblocks}>
+				<{include file="$xoops_theme/blocks/obblock_c.html"}>
+			<{/foreach}>
+			<!-- End center-center blocks loop -->
+			</td>
+		</tr>
+		<tr>
+			<td id="centerLcolumn">		
+			<!-- Start center-left blocks loop -->
+			<{foreach item=block from=$xoops_clblocks}>
+				<{include file="$xoops_theme/blocks/theme_blockcenter_l.html"}>
+			<{/foreach}>
+			<!-- End center-left blocks loop -->
+			</td>
+			<td id="centerRcolumn">		
+			<!-- Start center-right blocks loop -->
+			<{foreach item=block from=$xoops_crblocks}>
+				<{include file="$xoops_theme/blocks/theme_blockcenter_r.html"}>
+			<{/foreach}>
+			<!-- End center-right blocks loop -->
+			</td>
+		</tr>
+        </table>
+        <{/if}>
+        <!-- End display center blocks -->
+        <div id="content">
+          <{$xoops_contents}>
+        </div>
+<!-- Start bottom blocks loop -->
+        <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+        <table cellspacing="0">
+        <{if $xoBlocks.page_bottomcenter}>
+		<tr><td id="bottomCcolumn" colspan="2">
+			<{foreach from=$xoBlocks.page_bottomcenter item=block}><{include file="$xoops_theme/blocks/obblock_c.html"}><{/foreach}>
+			</td>
+		</tr>
+		<{/if}>
+		<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+		<tr>
+			<td id="bottomLcolumn">
+				<{foreach from=$xoBlocks.page_bottomleft item=block}><{include file="$xoops_theme/blocks/theme_blockcenter_l.html"}><{/foreach}>
+			</td>
+			<td id="bottomRcolumn">
+				<{foreach from=$xoBlocks.page_bottomright item=block}><{include file="$xoops_theme/blocks/theme_blockcenter_r.html"}><{/foreach}>
+			</td>
+		</tr>
+        <{/if}>
+        </table>
+        <{/if}>
+<!-- End bottom blocks loop -->
+      </td>
+      <{if $xoops_showrblock == 1}>
+      <td id="rightcolumn">
+        <!-- Start right blocks loop -->
+        <{foreach item=block from=$xoops_rblocks}>
+          <{include file="$xoops_theme/blocks/theme_blockright.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->
+      </td>
+      <{/if}>
+    </tr>
+  </table>
+ 
+
+  		<table id="cmsFooter" cellspacing="0">
+    		<tr>
+          		<td>
+          		<br />
+
+					<{$xoops_footer}>
+				</td>
+    		</tr>
+    	<tr>
+      <td id="obFooter" >&nbsp;</td>
+    </tr>
+        <td>
+                <form action="<{$xoops_url}>/search.php" method="post" >
+                <input name="query" type="text" /> 
+                <input type="hidden" name="action" value="results" /> 
+                <input class="button" type="submit" value="搜索" style="font-size:12px; padding:0px;" />          
+              </form>
+      </td>
+  		</table>
+
+<P align=right><P align=right>theme design by <a href="http://ffxk.com" target="_blank">Solo Windr</a></P></P>
+
+	</div>
+    <!-- USER NaVIGaTION BaR END -->
+</body>
+</html>

@@ -1,0 +1,77 @@
+﻿/* */
+#nav, #nav ul {
+        z-index: 100;
+        list-style: none;
+        background: black;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+}
+/* 主菜单字体颜色,,默认#ffffff*/
+#nav a {
+        text-align: center;
+        border-right:    0px solid white;
+        margin: 0;
+        padding: 5px;
+        display: block;
+        color: #f9f9f9;
+        text-decoration: none;        
+}
+#nav li {
+    float: left;
+    padding: 0;
+    width: 13.8%;
+    position: relative;
+    z-index: 100;    
+}
+/* 子菜单边框颜色，背景颜色,,默认#666666,#4682b4*/
+#nav li ul {
+    display:none;
+    position: absolute;
+    height: auto;
+    width:7.2em;
+    font-weight: bold;
+    border: 0px solid #e7efff;
+    background: #229adf;
+    color: #f9f9f9;    
+}
+#nav li > ul {
+    top: auto;
+    left: auto;
+    }
+#nav li li {
+        padding-right: 0em;
+        width: 7em;        
+}
+/* 激活时的子菜单字体颜色,默认ffffff*/
+#nav li ul a {
+        text-align: left;
+        border: 0;
+        color: #f9f9f9;
+        width:7em;
+}
+
+#nav li ul ul {
+        margin: -1.75em 0 0 7em;        
+}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+    display:none;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {
+    display:block;    
+}
+/* 激活时的子菜单背景颜色,默认#314584*/
+#nav ul li:hover, #nav ul li.sfhover {
+    background: #C0C0C0;
+}
+/* 激活时的主菜单背景颜色,默认#4682b4*/
+#nav li:hover, #nav li.sfhover {
+    background: #229adf;    
+}
+/* */
+a.menuTop:active {text-decoration: underline; color: #6b6b6b; }
+a.menuTop:link { color: white; }
+a.menuTop:visited { color: white; }
+a.menuTop:hover { text-decoration: underline; color: #6b6b6b; }

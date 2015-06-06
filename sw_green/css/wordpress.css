@@ -1,0 +1,237 @@
+@charset "utf-8";
+/*  
+Theme Name: Hoofei
+Theme URI: http://www.hoofei.com/
+Description: The simple WordPress theme was designed by <a href="http://www.hoofei.com/">Hoofei</a>.
+Version: v4.0
+Author: Hoofei
+Author URI: http://www.hoofei.com/
+
+*/
+
+/* General Start */
+
+.clear { clear: both; }
+
+.entry p a:visited {
+	color: #b85b5a;
+	}
+	
+.center { text-align: center; }
+h2 {
+	margin: 20px 0 0;
+	color: #0954A6;
+	}
+
+h2.pagetitle {
+	margin-top: 25px;
+	text-align: center;
+}
+/* General End */
+
+/* Content Start */
+#content {
+	font-size: 1em;
+	}
+
+.narrowcolumn {
+	float: left;
+	padding: 0 0 20px;
+	margin: 0;
+	width: 550px;
+	}
+	
+.narrowcolumn .postmetadata {
+	padding: 0;
+	}
+	
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	}
+	
+.narrowcolumn .entry {
+	line-height: 20px;
+	}
+
+.narrowcolumn .entry ul li {
+    list-style-type: square;
+	}
+
+.narrowcolumn .entry ol {
+    padding-left: 9px;
+	}
+		
+.narrowcolumn .entry ol li {
+    list-style-type: decimal;
+	}
+	
+.post {
+	margin: 20px 0;
+	text-align: left;
+	}
+
+ul.date {
+    background: url('../images/databg.gif') no-repeat;
+	width: 48px;
+	height: 45px;
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0;
+	}
+
+li.day {
+    font-size: 22px;
+	color: #FFF;
+	text-align: center;
+	list-style-type: none;
+	margin: 1px 0 0 0;
+	}
+	
+li.month {
+    font-size: 12px;
+	color: #5B9300;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	list-style-type: none;
+	}
+	
+ul.title {
+    float: left;
+	margin: 0;
+	padding: 0;
+	}
+	
+li.topic {
+    list-style-type: none;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding-bottom: 3px;
+	}
+
+li.topic a:hover {
+    color: #87C71F;
+	text-decoration: none;
+	}
+
+li.postmeta {
+    color: #609509;
+    list-style-type: none;
+	font-size: 9px;
+	background: url('../images/smallbg.png') no-repeat top left;
+	padding-top: 7px !important;
+	padding-top: 5px;
+	text-transform: uppercase;
+	}
+	
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left
+	}
+	
+/* Content End */
+.entry p.meta {
+    margin: 0;
+	padding: 2px 0;
+	border-top: 1px dotted #DDD;
+	}
+	
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+	text-align:center;
+	}
+	
+/* Navigation Start */
+
+.navigation {
+    font-size: 10px;
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+	}
+
+.navigation a {
+    border: 0px solid #70A2D9;
+	background: transparent;
+	padding: 4px;
+	color: #0954A6;
+	line-height: 22px;
+	}
+	
+/* Navigation End */
+
+/* Comment Start */
+.commentlist {
+	padding: 0;
+	margin: 0;
+	}
+
+.commentlist li {
+	margin: 8px 0 0;
+	padding: 8px 10px 3px;
+	list-style: none;
+	}
+
+.commentlist p {
+	margin: 10px 5px 5px 0;
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
+	}
+	
+.commentlist li, #commentform input, #commentform textarea {
+	font: 12px Verdana, Arial, Sans-Serif;
+	}
+
+.commentlist li {
+	font-weight: bold;
+	}
+
+.commentlist cite, .commentlist cite a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 12px;
+	color: #6492C2;
+	}
+
+.commentmetadata a {
+    color: #6D95C0;
+	margin: 0;
+	font-weight: normal;
+	border-bottom: 1px dotted #ccc;
+	padding: 5px 0;
+	display: block;
+	}
+	
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	}
+
+/* Comment End */
+
+/* TAGS */
+.utwtags {border-top: 1px solid #81bb4b;
+padding: 10px 5px 0px;
+font-size: 100%; font-variant:small-caps;}
+
+.utwrelposts a {text-decoration:none}
+
+/* ffxk */
+/* wp日志内容色*/
+
+#wordpressitemText {
+	line-height: 1.2em;
+	text-align: justify;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background: #000000 url('../images/planetback.gif') top right no-repeat;
+}
